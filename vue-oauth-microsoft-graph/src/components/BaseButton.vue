@@ -25,7 +25,6 @@ export default {
 <style>
 .warn{
     background-color: orange;
-    
 }
 
 .warn:hover{
