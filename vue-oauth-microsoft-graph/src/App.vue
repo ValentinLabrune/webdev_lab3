@@ -1,4 +1,5 @@
 <script setup>
+import HomePage from './pages/HomePage.vue'
 </script>
 
 <template>
@@ -9,6 +10,7 @@
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
+    <HomePage />
   </div>
 </template>
 
