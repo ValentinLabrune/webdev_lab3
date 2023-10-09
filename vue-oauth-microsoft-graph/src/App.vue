@@ -9,7 +9,7 @@ import BaseButton from './components/BaseButton.vue'
   <div>
     <BaseLayout>
       <HomePage />
-      <BaseButton />
+      <BaseButton dangerValue="danger"/>
     </BaseLayout>
   </div>
 </template>

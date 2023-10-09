@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button>click here !</button>
+        <button :class=this.dangerValue>click here !</button>
         <button id="disabled">I'm disabled</button>
     </div>
 </template>
@@ -8,23 +8,46 @@
 <script>
 export default {
     name: 'HomePage',
+    props: {
+        dangerValue: String
+    },
     data() {
         return {
-            // Your data goes here
+            buttonColor: ""
         }
     },
     methods: {
         // Your methods go here
-    },
-    mounted() {
-        // Your mounted code goes here
     }
 }
 </script>
 
 <style>
+.warn{
+    background-color: orange;
+    
+}
+
+.warn:hover{
+    background-color: rgb(255, 106, 0);
+}
+
+.danger {
+  background-color: red;
+}
+
+.danger:hover{
+    background-color: rgb(124, 0, 0);
+}
+  
+.safe {
+  background-color: lightgreen;
+}
+.safe:hover{
+    background-color: green;
+}
+
 button{
-    background-color: lightgreen;
     padding: 1em;
     text-align: center;
     border: none;
