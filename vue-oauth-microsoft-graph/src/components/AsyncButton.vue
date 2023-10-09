@@ -9,7 +9,8 @@ export default {
     name: 'HomePage',
     data() {
         return {
-            isPending : false
+            isPending : false,
+            cpt: 0
         }
     },
     methods: {
@@ -28,8 +29,9 @@ export default {
             } finally {
                 setTimeout(() => {
                 this.isPending = false;
-            }, 2000);
+            }, 2000 + this.cpt*1000);
             }
+            this.cpt++;
         }
     }
 }
